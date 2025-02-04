@@ -1,0 +1,151 @@
+@import "../../vars.css";
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contact{
+    display: flex;
+    margin-top: 17%;
+   flex-direction: row;
+    align-items:normal;
+    gap: 40px;
+    margin-left: 6%;
+    margin-right: 22%;
+}
+.contact img{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: -50%;
+    height: 30px;
+    padding-right: 8px;
+    gap: 10px;
+
+}
+
+.contactSocial {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    align-items: center;
+    gap: 10px;
+    height:   45px;
+    padding :3%;
+    
+}
+.contactSocial img{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  
+    height: 30px;
+    padding-right: 8px;
+    gap: 10px;
+
+}
+.footer{
+    text-align: center;
+    margin-left: 30%;
+    margin-top: -1%;
+}
+
+.footer p {
+    font-size: 23px;
+  
+   text-align: center;
+    color:var(--color-text);
+}
+/* Add styles for the comment section */
+.comment {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 30%;
+    margin-left: 20%;
+}
+
+.comment h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.comment label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.comment input, .comment textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #555;
+    color: white;
+}
+
+.comment input:focus, .comment textarea:focus {
+    outline: none;
+    background-color: #666;
+}
+
+.comment .btn-submit {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.comment .btn:hover {
+    background-color: #e67e22;
+}
+@media screen and (max-width: 830px) {
+    .container {
+      flex-direction: column;
+      gap: 23px;
+      display: flex;
+      margin-left: -40%;
+      
+    }
+    .comment{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 400px;
+        margin-left: 30%;
+        margin-right: 80%;
+    }
+  
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .links {
+      align-items: center;
+    }
+    .contact{
+        display: flex;
+        margin-left:  45%;
+    }
+    .footer{
+        display: flex;
+        margin-right: 15%;
+        font: size 14px; ;
+    }
+    .contactSocial{
+        display: flex;
+        margin-right: 1%;
+        margin-left: 55%;
+    }
+}
